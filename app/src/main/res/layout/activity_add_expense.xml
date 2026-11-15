@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F7FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Page Heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Daily Record"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#1E3A5F"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Date Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:elevation="3dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#334155"/>
+
+            <EditText
+                android:id="@+id/etDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="YYYY-MM-DD"
+                android:textSize="16sp"
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="none"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Income Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:elevation="3dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INCOME CATEGORIES"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#15803D"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Salary -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Salary"
+                    android:textSize="16sp"
+                    android:textColor="#334155"/>
+
+                <EditText
+                    android:id="@+id/etSalary"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Rs. 0.00"
+                    android:inputType="numberDecimal"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <!-- Freelance -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Freelance"
+                    android:textSize="16sp"
+                    android:textColor="#334155"/>
+
+                <EditText
+                    android:id="@+id/etFreelance"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Rs. 0.00"
+                    android:inputType="numberDecimal"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <!-- Business -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Business"
+                    android:textSize="16sp"
+                    android:textColor="#334155"/>
+
+                <EditText
+                    android:id="@+id/etBusiness"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Rs. 0.00"
+                    android:inputType="numberDecimal"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <!-- Other Income -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Other Income"
+                    android:textSize="16sp"
+                    android:textColor="#334155"/>
+
+                <EditText
+                    android:id="@+id/etOtherIncome"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Rs. 0.00"
+                    android:inputType="numberDecimal"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Expense Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:elevation="3dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EXPENSE CATEGORIES"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#DC2626"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Grocery -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Grocery"
+                    android:textSize="16sp"
+                    android:textColor="#334155"/>
+
+                <EditText
+                    android:id="@+id/etGrocery"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Rs. 0.00"
+                    android:inputType="numberDecimal"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <!-- Transport -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Transport"
+                    android:textSize="16sp"
+                    android:textColor="#334155"/>
+
+                <EditText
+                    android:id="@+id/etTransport"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Rs. 0.00"
+                    android:inputType="numberDecimal"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <!-- Food -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Food"
+                    android:textSize="16sp"
+                    android:textColor="#334155"/>
+
+                <EditText
+                    android:id="@+id/etFood"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Rs. 0.00"
+                    android:inputType="numberDecimal"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <!-- Education -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Education"
+                    android:textSize="16sp"
+                    android:textColor="#334155"/>
+
+                <EditText
+                    android:id="@+id/etEducation"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Rs. 0.00"
+                    android:inputType="numberDecimal"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <!-- Shopping -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Shopping"
+                    android:textSize="16sp"
+                    android:textColor="#334155"/>
+
+                <EditText
+                    android:id="@+id/etShopping"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Rs. 0.00"
+                    android:inputType="numberDecimal"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <!-- Bills -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bills"
+                    android:textSize="16sp"
+                    android:textColor="#334155"/>
+
+                <EditText
+                    android:id="@+id/etBills"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Rs. 0.00"
+                    android:inputType="numberDecimal"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <!-- Health -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Health"
+                    android:textSize="16sp"
+                    android:textColor="#334155"/>
+
+                <EditText
+                    android:id="@+id/etHealth"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Rs. 0.00"
+                    android:inputType="numberDecimal"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <!-- Other Expense -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Other Expense"
+                    android:textSize="16sp"
+                    android:textColor="#334155"/>
+
+                <EditText
+                    android:id="@+id/etOtherExpense"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Rs. 0.00"
+                    android:inputType="numberDecimal"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSaveExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Daily Record"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2563EB"
+            android:padding="14dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

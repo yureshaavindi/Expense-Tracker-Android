@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F7FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Financial Summary"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#1E3A5F"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgSummaryPeriod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/rbDaily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbWeekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weekly"
+                android:layout_marginStart="12dp"/>
+
+            <RadioButton
+                android:id="@+id/rbMonthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly"
+                android:layout_marginStart="12dp"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPeriodLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today's Summary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#334155"
+            android:layout_marginBottom="16dp"/>
+
+
+        <TextView
+            android:id="@+id/tvSummaryDateRange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Summary period"
+            android:textSize="15sp"
+            android:textColor="#64748B"
+            android:layout_marginBottom="20dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Income"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvFinancialIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rs. 0.00"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#15803D"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Expenses"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvFinancialExpenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rs. 0.00"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#DC2626"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remaining Balance"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvFinancialBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rs. 0.00"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#1E3A5F"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Transactions"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvFinancialTransactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#1E3A5F"
+            android:layout_marginBottom="30dp"/>
+
+        <Button
+            android:id="@+id/btnFinancialBackHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Home"
+            android:textAllCaps="false"
+            android:backgroundTint="#2563EB"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</ScrollView>
