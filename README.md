@@ -20,5 +20,3 @@ An Android application developed using Java, XML, SQLite, and RecyclerView.
 ## Project Information
 Mobile Application Development – Assignment 02
 
-## Demonstration Video
-[Add your video link here]
